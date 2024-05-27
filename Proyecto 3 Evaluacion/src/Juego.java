@@ -58,7 +58,7 @@ public class Juego extends JPanel {
         Graphics2D g2=(Graphics2D)g;//Variable que exige los metodos lo convierte en una variable de graphics 2D
         dibujar(g2);//Metodos a ejecutar
         puntaje(g2);
-        mover(g2);
+        mover();
     }
 
     /**
@@ -78,7 +78,7 @@ public class Juego extends JPanel {
      * Se encarga de comprobar si hay choque y de mover tos los objetos
      * @param g2 es un parametro de tipo Graphics2D
      */
-    public void mover(Graphics2D g2)//Se encarga de de llamar al los metodos movimiento
+    public void mover()//Se encarga de de llamar al los metodos movimiento
     {
 
         if((alien.getPosicion()<=60) && soldado.getPosicionY()>460 ) //Cuando estan los dos en dichas posiciones se marcara como choque
