@@ -6,6 +6,8 @@ Yo he incluido modificaciones como poder saltar mientras el jugador esta desencd
 
 
 El juego consiste en ir esquivando los obstaculos (aliens) para ello se pulsara la tecla espacio, cuando esto sucesa el jugador (Soldado) subira hasta un limite luego de esto comenzara a bajar. Si en este proceso se vuele a presionar el espacio el jugador volvera subir hasta el limite.
+
+
 El  juego ira contanto el numero de aliens que esquivas y te lo ira mostrando en la parte superior. 
 
 
