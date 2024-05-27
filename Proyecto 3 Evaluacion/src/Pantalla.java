@@ -17,7 +17,7 @@ public class Pantalla extends JPanel {
         ventana.setVisible(true);//Es visible
         while (Juego.getVidas()>0)//Comprueba que tengas vidas
         {
-            Juego.repaint();//Hace vuelva todos los metodos de la clase juegos;
+            Juego.repaint();
             Thread.sleep(10);//Tiempo que tarda en refrescar
         }
         if(Juego.vidas==0)//Se te acabaron las vidas
