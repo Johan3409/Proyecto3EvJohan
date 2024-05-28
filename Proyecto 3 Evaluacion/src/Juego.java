@@ -55,7 +55,7 @@ public class Juego extends JPanel {
      */
     public void paintComponent(Graphics g)
     {
-         Graphics2D g2=(Graphics2D)g;//Variable que exige los metodos lo convierte en una variable de graphics 2D
+        Graphics2D g2=(Graphics2D)g;//Variable que exige los metodos lo convierte en una variable de graphics 2D
         //Metodos para dibujar
         fondo.dibujar(g2);//Ejecuta el metodo dibujar de fondo
         soldado.dibujar(g2);//Ejecuta el metodo dibujar de fondo

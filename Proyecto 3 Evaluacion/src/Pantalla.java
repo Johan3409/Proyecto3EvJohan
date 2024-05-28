@@ -15,7 +15,7 @@ public class Pantalla extends JPanel {
         ventana.setSize(1200,629);//tamaño de la pantalla
         ventana.setLocationRelativeTo(null); //aparece centrado
         ventana.setVisible(true);//Es visible
-        while (Juego.getVidas()>0)//Comprueba que tengas vidas
+       iwhile (Juego.getVidas()>0)//Comprueba que tengas vidas
         {
             Juego.repaint();
             Thread.sleep(10);//Tiempo que tarda en refrescar
