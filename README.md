@@ -40,6 +40,12 @@ Por último se mostrara el historial de partidas.
 La mayor dificultad que encontre es al momento de guardad los datos, el marcar los parametros para los cuales se tenia en cuante un golpe y investigar como dibujar y mover los componentes del proyecto.
 
 
+# Investigaciones 
 
+
+Uso de la clase  File 
+
+
+Uso de librerias para la representación grafica
 
 
