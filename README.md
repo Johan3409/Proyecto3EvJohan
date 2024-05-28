@@ -32,6 +32,11 @@ Al final del juego te mostrar la máxima puntuación y nivel obtenido y la fecha
 Por último se mostrara el historial de partidas.
 
 
+
+# Dificultades:
+
+
+
 La mayor dificultad que encontre es al momento de guardad los datos, el marcar los parametros para los cuales se tenia en cuante un golpe y investigar como dibujar y mover los componentes del proyecto.
 
 
