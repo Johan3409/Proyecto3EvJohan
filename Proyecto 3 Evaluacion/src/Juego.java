@@ -55,32 +55,14 @@ public class Juego extends JPanel {
      */
     public void paintComponent(Graphics g)
     {
-        Graphics2D g2=(Graphics2D)g;//Variable que exige los metodos lo convierte en una variable de graphics 2D
-        dibujar(g2);//Metodos a ejecutar
-        puntaje(g2);
-        mover();
-    }
-
-    /**
-     * //Se encarga de llamar a los metodos dibujar
-     * @param g parametro de tipo Graphics2D
-     */
-    public void dibujar(Graphics2D g)
-    {
-        fondo.dibujar(g);//Ejecuta el metodo dibujar de fondo
-        soldado.dibujar(g);//Ejecuta el metodo dibujar de fondo
-        alien.dibujar(g);//Ejecuta el metodo dibujar de alien
-        alien1.dibujar(g);
-        alien2.dibujar(g);
-    }
-
-    /**
-     * Se encarga de comprobar si hay choque y de mover tos los objetos
-     * @param g2 es un parametro de tipo Graphics2D
-     */
-    public void mover()//Se encarga de de llamar al los metodos movimiento
-    {
-
+         Graphics2D g2=(Graphics2D)g;//Variable que exige los metodos lo convierte en una variable de graphics 2D
+        //Metodos para dibujar
+        fondo.dibujar(g2);//Ejecuta el metodo dibujar de fondo
+        soldado.dibujar(g2);//Ejecuta el metodo dibujar de fondo
+        alien.dibujar(g2);//Ejecuta el metodo dibujar de alien
+        alien1.dibujar(g2);
+        alien2.dibujar(g2);
+        //Metodos para mover y comperueba si te golpeas
         if((alien.getPosicion()<=60) && soldado.getPosicionY()>460 ) //Cuando estan los dos en dichas posiciones se marcara como choque
         {
             golpe =true;
@@ -103,18 +85,10 @@ public class Juego extends JPanel {
             golpe1=false;
             golpe2=false;
         }
-
         alien.movimiento();//Mueve al alien
         alien1.movimiento();
         alien2.movimiento();
-    }
-
-    /**
-     * Se encarga de escribir vidas, puntaje y nivel en la pantalla
-     * @param g es una variable del tipo Graphics2D
-     */
-    public void puntaje(Graphics2D g)
-    {
+        //Mostrar puntaje
         int puntos=alien.getSaltos();
         int puntos1=alien1.getSaltos();
         int puntos2=alien2.getSaltos();
@@ -125,9 +99,7 @@ public class Juego extends JPanel {
         g.drawString("Puntaje: "+puntosTotales,250,30);//Posicion y puntos
         g.drawString("Vidas: "+vidas,50,30);//Posicion y vidas
         g.drawString("Nivel: "+ puntosTotales/2,450,30);//Posicion y nivel
-
     }
-
     /**
      * Devuelve las vidas que tienes
      * @return devuelve un numero
