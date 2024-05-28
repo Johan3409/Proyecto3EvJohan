@@ -17,6 +17,14 @@ En el caso de esquivar el alien la velocidad del mismo aumentara, en caso contra
 
 El juego tiene como objetivo sobrevivir lo más que puedas. Una vez las vidas lleguen a cero se terminara la partida mostrando la puntuacion y nivel más altos guardados ademas de la fecha en la que se dio la partida.
 
+Estadisticas:
+
+
+Al final del juego te mostrar la máxima puntuación y nivel obtenido y la fecha de la partida.
+
+
+Por último se mostrara el historial de partidas.
+
 
 La mayor dificultad que encontre es al momento de guardad los datos, el marcar los parametros para los cuales se tenia en cuante un golpe y investigar como dibujar y mover los componentes del proyecto.
 
