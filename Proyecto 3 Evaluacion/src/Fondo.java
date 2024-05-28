@@ -24,7 +24,7 @@ public class Fondo {
      */
     public void dibujar(Graphics2D g)
     {
-        ImageIcon fondo= new ImageIcon("src/Recursos/.jpg");//Carga la imagen de la ruta en el objeto fondo
+        ImageIcon fondo= new ImageIcon("src/Recursos/fondo.jpg");//Carga la imagen de la ruta en el objeto fondo
         g.drawImage(fondo.getImage(), x_primer_fondo, y_primer_fondo,anchoFondo,altoFondo,null);//Dibuja la imagen con dichas caracteristicas
         g.drawImage(fondo.getImage(), x_segundo_fondo, y_segundo_fondo,anchoFondo,altoFondo,null);//Dibuja la imagen con dichas caracteristicas
     }
